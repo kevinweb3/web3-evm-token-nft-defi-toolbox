@@ -1,0 +1,7 @@
+{
+  "contractName": "SimpleToken",
+  "contractSymbol": "ST",
+  "contractDecimals": "1",
+  "contractTotalSupply": "100000010",
+  "contractBalance": "10"
+}
