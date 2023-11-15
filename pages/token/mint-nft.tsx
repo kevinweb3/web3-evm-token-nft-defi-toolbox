@@ -8,11 +8,7 @@ import {
 } from 'wagmi';
 import toast, { Toaster } from 'react-hot-toast';
 import Header from '../components/Header';
-import CustomButton from '../components/CustomButton';
 import { Inter } from 'next/font/google';
-import { NFT_CONTRACT_ADDRESS } from '@/utils/config';
-import { polygonMumbai } from 'wagmi/chains';
-import { parseEther } from 'viem';
 import { Input, Form, message, Space, Button } from 'antd';
 
 const inter = Inter({ subsets: ['latin'] });

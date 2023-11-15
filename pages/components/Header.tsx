@@ -46,12 +46,28 @@ const items: MenuProps['items'] = [
     key: 'nft',
     children: [
       {
-        label: 'Item 1',
-        key: 's8',
+        label: 'NFT Cretor',
+        key: '/nftmarket/nftCreator',
       },
       {
-        label: 'Item 2',
-        key: 's9',
+        label: 'NFT Gallery',
+        key: '/nftmarket/nftGallery',
+      },
+      {
+        label: 'NFT Collection Detail',
+        key: '/nftmarket/nftCollectionInfoDisplay',
+      },
+      {
+        label: 'NFT Collection Sales',
+        key: '/nftmarket/nftCollectionSalesDisplay',
+      },
+      {
+        label: 'NFT Balance',
+        key: '/nftmarket/tokensBalanceDisplay',
+      },
+      {
+        label: 'NFT Transction History',
+        key: '/nftmarket/transactionsHistoryDisplay',
       },
     ],
   },
@@ -60,12 +76,8 @@ const items: MenuProps['items'] = [
     key: 'defi',
     children: [
       {
-        label: 'Item 1',
-        key: 's10',
-      },
-      {
-        label: 'Item 2',
-        key: 's11',
+        label: 'Dex Swap',
+        key: '/evm/CommingSoon',
       },
     ],
   },
@@ -74,12 +86,8 @@ const items: MenuProps['items'] = [
     key: 'btc',
     children: [
       {
-        label: 'Item 1',
-        key: 's6',
-      },
-      {
-        label: 'Item 2',
-        key: 's7',
+        label: 'BTC Wallet Generator',
+        key: '/evm/CommingSoon',
       },
     ],
   },
@@ -88,12 +96,48 @@ const items: MenuProps['items'] = [
     key: 'evm',
     children: [
       {
-        label: 'Item 1',
-        key: 's4',
+        label: 'Testnet Faucets',
+        key: '/evm/CommingSoon',
       },
       {
-        label: 'Item 2',
-        key: 's5',
+        label: 'EVM Wallet Generator',
+        key: '/evm/CommingSoon',
+      },
+      {
+        label: 'ABI Caller',
+        key: '/evm/CommingSoon',
+      },
+      {
+        label: 'Selector Querier',
+        key: '/evm/CommingSoon',
+      },
+      {
+        label: 'Unit Converter',
+        key: '/evm/CommingSoon',
+      },
+      {
+        label: 'Batch Query Wallet Balance',
+        key: '/evm/CommingSoon',
+      },
+      {
+        label: 'Tx Trace Viewer',
+        key: '/evm/CommingSoon',
+      },
+      {
+        label: 'Address & ENS Lookup',
+        key: '/evm/CommingSoon',
+      },
+      {
+        label: 'TopicID Querier',
+        key: '/evm/CommingSoon',
+      },
+      {
+        label: 'Hash Tools',
+        key: '/evm/CommingSoon',
+      },
+      {
+        label: 'Input Calldata Decoder & Encoder',
+        key: '/evm/CommingSoon',
       },
     ],
   },
@@ -103,12 +147,8 @@ const items: MenuProps['items'] = [
     children: [
       {
         label: 'Item 1',
-        key: 's6',
-      },
-      {
-        label: 'Item 2',
-        key: 's7',
-      },
+        key: '/evm/CommingSoon',
+      }
     ],
   },
   {
@@ -117,12 +157,8 @@ const items: MenuProps['items'] = [
     children: [
       {
         label: 'Item 1',
-        key: 's6',
-      },
-      {
-        label: 'Item 2',
-        key: 's7',
-      },
+        key: '/evm/CommingSoon',
+      }
     ],
   },
   {
@@ -131,12 +167,8 @@ const items: MenuProps['items'] = [
     children: [
       {
         label: 'Item 1',
-        key: 's6',
-      },
-      {
-        label: 'Item 2',
-        key: 's7',
-      },
+        key: '/evm/CommingSoon',
+      }
     ],
   },
 ];
