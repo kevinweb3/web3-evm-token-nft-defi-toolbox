@@ -46,7 +46,7 @@ const items: MenuProps['items'] = [
     key: 'nft',
     children: [
       {
-        label: 'NFT Cretor',
+        label: 'NFT Creator',
         key: '/nftmarket/nftCreator',
       },
       {
@@ -72,22 +72,12 @@ const items: MenuProps['items'] = [
     ],
   },
   {
-    label: 'DeFi',
-    key: 'defi',
-    children: [
-      {
-        label: 'Dex Swap',
-        key: '/evm/CommingSoon',
-      },
-    ],
-  },
-  {
     label: 'BTC',
     key: 'btc',
     children: [
       {
         label: 'BTC Wallet Generator',
-        key: '/evm/CommingSoon',
+        key: '/evm/btcwallet',
       },
     ],
   },
@@ -142,11 +132,21 @@ const items: MenuProps['items'] = [
     ],
   },
   {
+    label: 'DeFi',
+    key: 'defi',
+    children: [
+      {
+        label: 'Dex Swap',
+        key: '/evm/CommingSoon',
+      },
+    ],
+  },
+  {
     label: 'Solana',
     key: 'solana',
     children: [
       {
-        label: 'Item 1',
+        label: 'Solana Dapp',
         key: '/evm/CommingSoon',
       }
     ],
@@ -156,7 +156,7 @@ const items: MenuProps['items'] = [
     key: 'subgraphs',
     children: [
       {
-        label: 'Item 1',
+        label: 'Subgraphs',
         key: '/evm/CommingSoon',
       }
     ],
@@ -166,7 +166,7 @@ const items: MenuProps['items'] = [
     key: 'dune',
     children: [
       {
-        label: 'Item 1',
+        label: 'Dune',
         key: '/evm/CommingSoon',
       }
     ],
@@ -214,7 +214,22 @@ export default function Header() {
     <div className='flex-1 max-w-4xl ml-20'>
     <Menu style={{ minWidth: 0, flex: "auto", fontSize: "18px" }} onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
     </div>
-    <div className='bottom-0 left-0 items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black static h-auto w-auto lg:bg-none my-24 lg:my-0'>
+    <div className='bottom-0 flex left-0 items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black static h-auto w-auto lg:bg-none my-24 lg:my-0'>
+    <Link
+        className="pointer-events-none items-center mx-2 my-1 p-8 lg:pointer-events-auto lg:p-0"
+        href="https://github.com/kevinweb3"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          src="/images/github.png"
+          alt="logo"
+          className="dark:invert"
+          width={30}
+          height={30}
+          priority
+        />
+      </Link>
       <ConnectButton />
     </div>
   </div>

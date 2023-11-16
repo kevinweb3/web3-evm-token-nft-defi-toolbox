@@ -82,6 +82,7 @@ const Web3Provider = (props: Props) => {
 		<WagmiConfig config={wagmiConfig}>
 			<RainbowKitProvider
 				chains={chains}
+				locale="en-US"
 				theme={{
 					lightMode: lightTheme({ overlayBlur: 'small' }),
 					darkMode: darkTheme({ overlayBlur: 'small' }),

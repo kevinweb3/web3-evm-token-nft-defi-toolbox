@@ -4,7 +4,7 @@ import { Contract } from "alchemy-sdk";
 import { useCallback, useState } from "react";
 import { useDropzone } from "react-dropzone";
 import { useAccount } from "wagmi";
-import { useEthersSigner } from "../components/ethers";
+import useEthersSigner from "../components/ethers";
 import Header from "../components/Header";
 import toast, { Toaster } from "react-hot-toast";
 

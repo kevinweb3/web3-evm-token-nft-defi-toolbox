@@ -3,7 +3,7 @@ import styles from "/public/styles/NftMinter.module.css";
 import { Contract } from "alchemy-sdk";
 import { useState } from "react";
 import { useAccount } from "wagmi";
-import { useEthersSigner } from "../components/ethers";
+import useEthersSigner from "../components/ethers";
 import Header from "../components/Header";
 import toast, { Toaster } from "react-hot-toast";
 // interface nftMinter {

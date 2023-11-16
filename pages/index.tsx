@@ -19,14 +19,14 @@ export default function Home() {
 		},
 		{
 			title: 'Sign-in with Ethereum',
-			description: 'Experience the power of secure communication with Sign-In with Ethereum (SIWE), an EIP-4361 authentication standard that creates user sessions based on wallet connections and more!',
+			description: 'Experience the power of secure communication with Sign-In with Ethereum (SIWE)!',
 			href: '/token/siwe',
 			icon: '/images/02.png'
 		},
 		{
 			title: 'Fetch ENS Names',
 			description:
-				'Fetch Ethereum Name Service names to Ethereum addresses using a decentralized domain name system that maps human-readable names to addresses.',
+				'Fetch Ethereum Name Service names to Ethereum addresses using a decentralized domain name system.',
 			href: '/token/ens',
 			icon: '/images/03.png'
 		},
@@ -40,7 +40,7 @@ export default function Home() {
 		{
 			title: 'Send ERC20',
 			description:
-				'ERC20 is a standard for fungible tokens on the Ethereum network. The example includes a tutorial on how to interact with a deployed ERC20 token contract.',
+				'ERC20 is a standard for fungible tokens on the Ethereum network. interact with a deployed ERC20 token contract.',
 			href: '/token/send-erc20',
 			icon: '/images/05.png'
 		},
@@ -51,6 +51,48 @@ export default function Home() {
 			href: '/token/mint-nft',
 			icon: '/images/06.png'
 		},
+		{
+			title: 'NFT Creator',
+			description:
+				'NFTs are unique digital assets that can represent things like artwork, collectibles, and other unique items.',
+			href: '/nftmarket/nftCreator',
+			icon: '/images/07.png'
+		},
+		{
+			title: 'NFT Gallery',
+			description:
+				'NFTs are unique digital assets that can represent things like artwork, collectibles, and other unique items.',
+			href: '/nftmarket/nftGallery',
+			icon: '/images/02.png'
+		},
+		{
+			title: 'NFT Collection Detail',
+			description:
+				'NFTs are unique digital assets that can represent things like artwork, collectibles, and other unique items.',
+			href: '/nftmarket/nftCollectionInfoDisplay',
+			icon: '/images/08.png'
+		},
+		{
+			title: 'NFT Collection Sales',
+			description:
+				'NFTs are unique digital assets that can represent things like artwork, collectibles, and other unique items.',
+			href: '/nftmarket/nftCollectionSalesDisplay',
+			icon: '/images/04.png'
+		},
+		{
+			title: 'NFT Balance',
+			description:
+				'NFTs are unique digital assets that can represent things like artwork, collectibles, and other unique items.',
+			href: '/nftmarket/tokensBalanceDisplay',
+			icon: '/images/01.png'
+		},
+		{
+			title: 'NFT Transction History',
+			description:
+				'NFTs are unique digital assets that can represent things like artwork, collectibles, and other unique items.',
+			href: '/nftmarket/transactionsHistoryDisplay',
+			icon: '/images/09.png'
+		},
 	];
   return (
     <main className={`flex flex-col items-center justify-between p-6 ${inter.className}`}>
@@ -58,16 +100,16 @@ export default function Home() {
         <title>Web3 Develop ToolBox</title>
       </Head>
 			<Header></Header>
-			<div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full text-4xl font-bold py-40">
+			<div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full text-4xl font-bold py-20">
 				Make Web3 Develop ToolBox
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-6xl lg:w-full lg:mb-0 lg:grid-cols-2 lg:text-left">
+      <div className="grid text-center lg:max-w-8xl lg:grid-cols-3 lg:text-left mb-40">
 			{links.map((link, index) => (
 				  <a
           href={link.href}
 					key={index}
-          className="grid grid-flow-col auto-cols-max group rounded-xl border bg-gray-40 px-5 py-6 transition-colors hover:border-blue-600 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 my-6 mx-10"
+          className="grid grid-flow-col auto-cols-max group rounded-xl border bg-gray-40 px-5 py-6 transition-colors hover:border-blue-600 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 my-6 mx-5"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -80,10 +122,9 @@ export default function Home() {
               priority
             />
 					<div className='col-span-2 px-5'>
-							<h2 className={`mb-3 text-2xl font-semibold`}>
+							<h2 className={`mb-3 text-xl font-semibold`}>
 							{link.title}{' '}
 							<span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-								-&gt;
 							</span>
 						</h2>
 						<p className={`m-0 max-w-[30ch] text-sm opacity-60`}>
