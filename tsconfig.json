@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "pages/nftmarket/nftMinter.js", "pages/nftmarket/nftCreator.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "pages/nftmarket/nftMinter.js", "pages/nftmarket/nftCreator.js", "pages/nftmarket/nftCollectionInfoDisplay.js"],
   "exclude": ["node_modules"]
 }
